@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.active {
+  @apply text-rose-600;
+  border-left: 3px solid rgb(255, 29, 72);
+  /* border-bottom: 3px solid rgb(255, 29, 72); */
+  margin-left: 10px;
+  /* border-bottom-left-radius: .75rem */
+  
+}
+
+.active svg {
+  @apply text-rose-600;
+  margin-left: 5px;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid rgb(45 212 191);
+  background: transparent;
+  resize: none;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+  color: rgba(34, 34, 96, 0.9);
+}
+input::placeholder {
+  color: rgba(34, 34, 96, 0.4);
+}
+textarea::placeholder {
+  color: rgba(34, 34, 96, 0.4);
+}
+select::placeholder {
+  color: rgba(34, 34, 96, 0.4);
+}
+.buttonStyle {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(45 212 191);
+}
